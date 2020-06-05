@@ -1,0 +1,13 @@
+version: '3'
+services: 
+  open:
+    image: openresty/openresty:alpine
+    volumes:
+    - "./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf"
+    ports:
+    - "9000:80"
+  app:
+    build: .
+    image: dalongrong/qqwry-rest-api:5-30
+    ports:
+      - "8080:8080"
