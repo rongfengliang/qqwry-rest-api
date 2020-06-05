@@ -55,3 +55,7 @@ http://<ip>:<port>/cityjson
 var returnCitySN = {"cip": "xxxxxxxx", "cid": "xxxxxx", "cname": "xxxxx"};
 
 ```
+
+* 一些说明
+
+目前cid 是一个默认值,暂时没有处理

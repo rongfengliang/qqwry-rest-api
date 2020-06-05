@@ -1,4 +1,4 @@
-module gihtub.com/rongfengliang/geoip-rest
+module gihtub.com/rongfengliang/qqwry-rest
 
 go 1.14
 
