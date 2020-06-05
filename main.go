@@ -7,6 +7,7 @@ import (
 
 	"github.com/gin-contrib/cache"
 	"github.com/gin-contrib/cache/persistence"
+	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 )
 
@@ -40,6 +41,7 @@ func main() {
 	qqWry := NewQQwry()
 	r := gin.Default()
 	r.Use(Cors())
+	pprof.Register(r)
 	r.GET("/", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"message": "API for GeoIP details",
