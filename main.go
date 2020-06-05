@@ -35,7 +35,7 @@ func Cors() gin.HandlerFunc {
 // main function containing the routes and db initialization
 func main() {
 	// set gin to production mode
-	gin.SetMode(gin.ReleaseMode)
+	gin.SetMode(gin.DebugMode)
 	IPData.FilePath = "qqwry.dat"
 	IPData.InitIPData()
 	qqWry := NewQQwry()
